@@ -1,11 +1,5 @@
 h1{
-	margin-top:15%;	
-	text-align:left;
-	font-size: 400%;
-	color:rgb(91, 78, 70);
 	font-family:Helvetica;
-	line-height:60%;
-	padding-left:10%;
 }
 
 h2{
@@ -28,15 +22,15 @@ hr{
 body{
 	background-color:white;
 	color:black;
+	margin: 0;
 }
 
-.container{
+
+.container-fluid{
 	background-color:lightblue;
-	width:100%;
-	color:grey;
-
-}
-.leftColumn{
+	padding:0;
+}	
+/* .leftColumn{
 	display:flex;
 	background-color:white;
 	float:left;
@@ -69,8 +63,8 @@ body{
 	margin-right:-200px;
 	position:relative;
 }
-
-.subHeading{
+ */
+/* .subHeading{
 	margin-top:20%;
 	color:grey;
 	font-size:25px;
@@ -92,4 +86,19 @@ body{
 }
 .content{
 	height:800px;
+} */
+
+.fwh-slide{
+	height: 100vh;
+	width:100%;
+	box-sizing: border-box;
+	justify-content:center;
+	align-items:center;
+	background:white;
+	
+}
+
+.fwh-slide h1{
+	text-color:white;
+	margin: 0;
 }
