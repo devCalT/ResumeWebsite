@@ -5,9 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.css" rel="stylesheet" />
 	    <script type = "text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
 		<link rel="stylesheet" href="css/styles.css">
-	  
-	 
 	</head>	
 	
 	<body>
@@ -15,42 +14,57 @@
 		<script src="code.jquery.com_jquery-3.7.0.js"></script>
 		<script src="js/ResumeJS.js"></script>
 		<div class="container-fluid" id="top">	
-			<!-- 
-			<section id="intro" class="relative flex flex-col items-center justify-center h-screen bg-cover md:bg-fixed bg-center" style="background-image: url("");">
-			<button onclick="scrollSmoothToElement('ExperienceTab')"> → Projects </button>	 -->
-			<section class="fwh-slide bg-warning">
-				<h1> Calvin Thai</h1>
-				<!-- <div class="Experience" id="ExperienceTab">Hi</div>
-				<button onclick="scrollSmoothToTop('top')"> → Back to Top </button>	 -->
+			<section class="fwh-slide">
+				<div class="flex-row">
+					<h1> Dynamic Web Resume by Calvin Thai</h1>
+				</div>
+				<div class="overlay">
+					<button class="btn primary-btn" onclick="scrollSmoothToTop()"> ↑ Back to Top </button>
+					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('AboutMeTab'))">→ About Me </button>
+					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ExperienceTab'))">→ Experience </button>
+					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('SkillsTab'))">→ Skills </button>
+					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ProjectsTab'))">→ Projects </button>
+				</div>
 			</section>
 			
-			<!-- 
-				<div class="fwh-slide">
-						<div class="content" id="AboutMeTab">
-							<h1> About Me </h1>
-						</div>
-						<h2> SMART BUILDING <br></br> TECHNICIAN </h2>
+			<section class="fwh-slide bg-secondary" id="AboutMeTab">
+				<h2> About Me </h2>
+				<h3> Hello there! I'm a Junior Web Developer with a relentless curiosity and a passion for technology. My main goal is to explore opportunities that challenge and allow me to develop clean, efficient code. 
+					I firmly believe in the power of technology to improve our lives and make the world a better place.<br><br>
+					
+					In my journey as a developer, I have had the pleasure of playing with various technologies, including automation systems, electronics, and cloud-based development. This diverse exposure has enriched my problem-solving skills and 
+					
+					opened my mind to innovative possibilities.<br><br>
+					
+					Beyond the realm of coding, I enjoy engaging in various creative pursuits. From cooking up delightful dishes to undertaking exciting DIY projects, I find joy in the process of creating and developing new things. 
+					
+					This creative outlook also reflects in my approach to programming, as I strive for continuous improvement and innovation in all aspects of my work.<br><br>
+					
+
+					As a lifelong learner, I am always eager to expand my knowledge and skillset. I embrace challenges as opportunities for growth, and I am not afraid to step out of my comfort zone to explore new technologies and approaches.
+
+					<br><br>
+					
+					In a rapidly evolving digital landscape, I aspire to make meaningful contributions and leverage technology to positively impact the lives of others. Whether it's through building user-friendly websites or developing cutting-edge 
+					
+					applications, I'm committed to crafting solutions that enhance user experiences and drive real-world value. If you're looking for a dedicated and enthusiastic team member who is passionate about leveraging technology for the 
+					
+						greater good, I'd be thrilled to connect with you. Let's collaborate and create something amazing together!</h3>
 						
-						
-				</div>
-			</div>
-			 -->
-			 
-			 <br>
-			<section class="fwh-slide bg-info">
-				<div class="Experience" id="ExperienceTab">Hi</div>
-				<button onclick="scrollSmoothToTop('top')"> → Back to Top </button>
 			</section>
-			<!-- <div class="leftColumn">
-						<div class="subText"> Junior Programmer with a passion and a drive for programming. </div>
-						
-				<div class="subHeading"> Calvin Thai </div>
-					<a href="./Pages/Experience.html"> → Experience </a>
-					<a href="./Pages/Qualifications"> → Qualifications </a
-					<a href="./Pages/Projects"> → Past Projects </a>
-					<a href="./Pages/Experience.html"> → Experience </a>
-			</div>
-			</div> -->
+
+			<section class="fwh-slide bg-primary" id="SkillsTab">
+				<h2> Skills </h2>
+
+				<div class="flex-row"></div>
+			</section>
+			<section class="fwh-slide bg-success" id="ProjectsTab>
+
+			</section>
+
+			<section class="fwh-slide bg-info" id="ExperienceTab">
+				<h2>Experience</h2>
+			</section>
 		</div>
 	</body>
 
