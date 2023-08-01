@@ -16,10 +16,7 @@ h2{
 }
 
 h3{
-	text-align:left;
-	padding-top: 10vh;
-	padding-left: 70vh;
-	padding-right: 10vh;
+	font-size: 2vh;
 }
 hr{
 	width:20%;
@@ -60,63 +57,11 @@ body{
 	background-color:black;
 	color:white;
 }
-/* .leftColumn{
-	display:flex;
-	background-color:white;
-	float:left;
-	width:20%;
-	height:90%;
-	position:relative;
-	text-align:left;
-	color:grey;
-	font-family:Gentium Plus;	
-	flex-direction:column;
-	 
-}
-.middleColumn{
-	background-color:white;
-	float:left;
-	width:60%;
-	height:90%;
-	text-align:left;
 
+.flexbox-skillsTab{
+	justify-content: space-around;
+	margin: 10vh;
 }
-.middleRow{
-	margin-bottom:20%;
-	height:500px;
-	background-color:black:
-}
-
-.rightColumn{
-	float:right;
-	width:200px;
-	margin-right:-200px;
-	position:relative;
-}
- */
-/* .subHeading{
-	margin-top:20%;
-	color:grey;
-	font-size:25px;
-	font-family:Gentium Plus;	
-	padding-left:15%;
-	content
-}
-
-.leftColumn > div {
-	margin-top:10%;
-	font-size:18px;
-	padding-left:15%;	
-}
-
-.leftColumn > a{
-	padding-top:10%;
-	font-size:18px;
-	padding-left:15%;	
-}
-.content{
-	height:800px;
-} */
 
 .fwh-slide{
 	height: 100vh;
@@ -125,5 +70,22 @@ body{
 	justify-content:center;
 	align-items:center;
 	background-color: #ffa000;	
+	
+}
+
+.about-col{
+	background-color: purple;
+	padding-top: 8vh;
+}
+
+.skills-col{
+	height: 60vh;
+	background-color:pink;
+	text-align: center;
+	
+}
+
+.p1{
+	font-size: 2vh;
 	
 }

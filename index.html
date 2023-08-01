@@ -7,13 +7,17 @@
 	    <script type = "text/javascript" src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
 		<link rel="stylesheet" href="css/styles.css">
+		
 	</head>	
 	
 	<body>
-		
+		<header>
+			<!-- <div class="navbar navbar-dark bg-dark box-shadow position-fixed"></div> -->
+		</header>
 		<script src="code.jquery.com_jquery-3.7.0.js"></script>
 		<script src="js/ResumeJS.js"></script>
-		<div class="container-fluid" id="top">	
+		<div class="container-fluid" id="top">
+			
 			<section class="fwh-slide">
 				<div class="flex-row">
 					<h1> Dynamic Web Resume by Calvin Thai</h1>
@@ -21,45 +25,88 @@
 				<div class="overlay">
 					<button class="btn primary-btn" onclick="scrollSmoothToTop()"> ↑ Back to Top </button>
 					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('AboutMeTab'))">→ About Me </button>
-					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ExperienceTab'))">→ Experience </button>
 					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('SkillsTab'))">→ Skills </button>
 					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ProjectsTab'))">→ Projects </button>
+					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ExperienceTab'))">→ Experience </button>
 				</div>
 			</section>
 			
 			<section class="fwh-slide bg-secondary" id="AboutMeTab">
 				<h2> About Me </h2>
-				<h3> Hello there! I'm a Junior Web Developer with a relentless curiosity and a passion for technology. My main goal is to explore opportunities that challenge and allow me to develop clean, efficient code. 
-					I firmly believe in the power of technology to improve our lives and make the world a better place.<br><br>
-					
-					In my journey as a developer, I have had the pleasure of playing with various technologies, including automation systems, electronics, and cloud-based development. This diverse exposure has enriched my problem-solving skills and 
-					
-					opened my mind to innovative possibilities.<br><br>
-					
-					Beyond the realm of coding, I enjoy engaging in various creative pursuits. From cooking up delightful dishes to undertaking exciting DIY projects, I find joy in the process of creating and developing new things. 
-					
-					This creative outlook also reflects in my approach to programming, as I strive for continuous improvement and innovation in all aspects of my work.<br><br>
-					
+				<div class="row flexbox-AboutMeTab justify-content-center">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-6 about-col">
+						<h3> Hello there! I'm a Junior Web Developer with a relentless curiosity and a passion for technology. My current goal is to explore opportunities that challenge me and allow me to develop intriguing, 
+							
+							efficient code. <br><br>
+							
+							In my journey as a developer, I have had the pleasure of playing with various technologies, including automation systems, electronics, and cloud-based development. This diverse exposure has
+							
+							enriched my problem-solving skills and opened my mind to innovative possibilities. I firmly believe in the power of technology to improve our lives and make the world a better place.<br><br>
+							
+							Beyond the realm of coding, I enjoy engaging in various creative pursuits. From cooking up delightful dishes to undertaking exciting DIY projects, I find joy in the process of creating and 
+							
+							developing new things. This creative outlook also reflects in my approach to programming, as I strive to serve up the best quality that others can enjoy.<br><br>
 
-					As a lifelong learner, I am always eager to expand my knowledge and skillset. I embrace challenges as opportunities for growth, and I am not afraid to step out of my comfort zone to explore new technologies and approaches.
-
-					<br><br>
-					
-					In a rapidly evolving digital landscape, I aspire to make meaningful contributions and leverage technology to positively impact the lives of others. Whether it's through building user-friendly websites or developing cutting-edge 
-					
-					applications, I'm committed to crafting solutions that enhance user experiences and drive real-world value. If you're looking for a dedicated and enthusiastic team member who is passionate about leveraging technology for the 
-					
-						greater good, I'd be thrilled to connect with you. Let's collaborate and create something amazing together!</h3>
-						
+							As a lifelong learner, I am always eager to expand my knowledge and skillset. I embrace challenges as opportunities for growth, and I am not afraid to step out of my comfort zone to explore new 
+							
+							technologies and approaches.<br><br>
+							
+							In a rapidly evolving digital landscape, I aspire to make meaningful contributions and leverage technology to positively impact the lives of others. Whether it's through building user-friendly 
+							
+							websites or developing cutting-edge applications, I'm committed to crafting solutions that enhance user experiences and drive real-world value. If you're looking for a dedicated and enthusiastic 
+							
+							team member who is passionate about leveraging technology for the greater good, I'd be thrilled to connect with you. Let's collaborate and create something amazing together!</h3>
+					</div>
 			</section>
 
 			<section class="fwh-slide bg-primary" id="SkillsTab">
 				<h2> Skills </h2>
 
-				<div class="flex-row"></div>
-			</section>
-			<section class="fwh-slide bg-success" id="ProjectsTab>
+				<div class="row flexbox-skillsTab">
+					<div class="col-sm-3 skills-col">
+						<h3> Teamwork and Communication</h3>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+							
+							Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+							
+							discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+							
+							very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+							
+							interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+					</div>
 
+					<div class="col-sm-3 skills-col">
+						<h3> Problem Solving</h3>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+							
+							Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+							
+							discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+							
+							very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+							
+							interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+					</div>
+					<div class="col-sm-3 skills-col">
+						<h3> Self-Directed </h3>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+							
+							Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+							
+							discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+							
+							very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+							
+							interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+					</div>
+				</div>
+
+			</section>
+			<section class="fwh-slide bg-success" id="ProjectsTab">
+				<h2> Projects </h2>
+	  
 			</section>
 
 			<section class="fwh-slide bg-info" id="ExperienceTab">

@@ -1,12 +1,14 @@
 
 //Animated scroll to id
 const scrollSmoothToElement = (id) => {
-		const yPos = id.getBoundingClientRect().top + window.scrollY;
-		console.log(document.documentElement.clientHeight)	
-		document.documentElement.scrollTop += yPos;;
+	const elementPos = id.getBoundingClientRect().top //Finds the difference between current scroll point and desired element
+	//console.log(elementPos);
+	if (elementPos > 0 ){ document.documentElement.scrollTop += elementPos; }
+	else if (elementPos < 0){ document.documentElement.scrollTop += elementPos; }	
 }
 
 //Animated scroll to top
 const scrollSmoothToTop = () => {
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 }
+
