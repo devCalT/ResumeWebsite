@@ -1,18 +1,22 @@
 h1{
 	font-family:Helvetica;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	top: 50%;
+	transform: translate(36vw, 45vh);
+	color:white;
+	font-size:5vh;
+}
+
+.sub-heading{
+	transform: translate(36vw, 45vh);
+	font-size: 3vh;
 	color:white;
 }
 
 h2{
+	font-family:Helvetica;
 	text-align:center;
 	font-size: 5vh;
 	padding-top: 5vh;
 	color:black;
-	font-family:Helvetica;
 }
 
 h3{
@@ -89,3 +93,85 @@ body{
 	font-size: 2vh;
 	
 }
+
+.exp-tab{
+	background-image: linear-gradient(#f8bf07,white);
+}
+
+.carousel-caption{
+	background: rgba(0,0,0,0.6);
+	width :60vw;
+	transform: translateX(+7.6%);
+}
+.carousel-inner > .carousel-item >img{
+	padding-top: 8vh;
+	height:75vh;
+	width :60vw;
+  }
+
+  .carousel-control-next{
+	height:10vh;
+	transform: translate(0%,35vh);
+  }
+  .carousel-control-prev{
+	height:10vh;
+	transform: translate(0%,35vh);
+  }
+
+  .hori-timeline .events {
+    border-top: 3px solid #e9ecef;
+}
+.hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
+
+
