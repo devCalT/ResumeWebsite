@@ -18,15 +18,16 @@
 		<script src="js/ResumeJS.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<div class="container-fluid" id="top">
-			
+			<div class="overlay">
+				<button class="btn primary-btn" onclick="scrollSmoothToTop()"> ↑ Back to Top </button>
+				<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('AboutMeTab'))">→ About Me </button>
+				<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('SkillsTab'))">→ Skills </button>
+				<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ProjectsTab'))">→ Projects </button>
+				<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ExperienceTab'))">→ Experience </button>
+			</div>
+
 			<section class="fwh-slide">
-				<div class="overlay">
-					<button class="btn primary-btn" onclick="scrollSmoothToTop()"> ↑ Back to Top </button>
-					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('AboutMeTab'))">→ About Me </button>
-					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('SkillsTab'))">→ Skills </button>
-					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ProjectsTab'))">→ Projects </button>
-					<button class="btn primary-btn" onclick="scrollSmoothToElement(document.getElementById('ExperienceTab'))">→ Experience </button>
-				</div>
+				
 				<div class="flex-row">
 					<h1> Dynamic Web Resume </h1>
 					<div class="sub-heading"> by Calvin Thai </div>
@@ -137,23 +138,10 @@
 
 			<section class="fwh-slide exp-tab" id="ExperienceTab">
 				<h2>Experience</h2>
-				<div class="card">
+				<!-- <div class="card">
 					<div class="card-body">
 						<div class="hori-timeline" dir="ltr">
 							<ul class="list-inline events">
-								<li class="list-inline-item event-list">
-									<div class="px-4">
-										<div class="event-date bg-soft-card1 text-primary">1998</div>
-										<h5 class="font-size-16">Born</h5>
-									</div>
-								</li>
-								<li class="list-inline-item event-list">
-									<div class="px-4">
-										<div class="event-date bg-soft-card2 text-success">2015</div>
-										<h5 class="font-size-16">Graduated High School</h5>
-										
-									</div>
-								</li>
 								<li class="list-inline-item event-list">
 									<div class="px-4">
 										<div class="event-date bg-soft-card3 text-danger">2018</div>
@@ -200,7 +188,69 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
+				<div class="timeline">
+					<div class="container left">
+					  <div class="date">15 Dec</div>
+					  <i class="icon fa fa-home"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+					<div class="container right">
+					  <div class="date">22 Oct</div>
+					  <i class="icon fa fa-gift"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+					<div class="container left">
+					  <div class="date">10 Jul</div>
+					  <i class="icon fa fa-user"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+					<div class="container right">
+					  <div class="date">18 May</div>
+					  <i class="icon fa fa-running"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+					<div class="container left">
+					  <div class="date">10 Feb</div>
+					  <i class="icon fa fa-cog"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+					<div class="container right">
+					  <div class="date">01 Jan</div>
+					  <i class="icon fa fa-certificate"></i>
+					  <div class="content">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>
+						  Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+						</p>
+					  </div>
+					</div>
+				  </div>
 			</section>
 		</div>
 	</body>	
